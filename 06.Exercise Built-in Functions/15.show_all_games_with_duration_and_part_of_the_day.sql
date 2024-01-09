@@ -6,10 +6,10 @@ ELSE 'Evening'
 END
 AS `Parts of the day`,
 CASE
-WHEN `duration` <=3 THEN 'Extra short'
+WHEN `duration` <=3 THEN 'Extra Short'
 WHEN `duration` BETWEEN 3 AND 6 THEN 'Short'
 WHEN `duration` BETWEEN 6 AND 10 THEN 'Long'
-ELSE 'Extra long'
+ELSE 'Extra Long'
 END
 AS `Duration`
 FROM `games`
