@@ -1,12 +1,3 @@
-CREATE DATABASE `soft_uni`;
-
-USE `soft_uni`;
-
-CREATE TABLE `towns` (
-    `id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(50) NOT NULL
-);
-
 INSERT INTO `towns` (`name`)
 VALUES
 ('Sofia'),
@@ -14,16 +5,6 @@ VALUES
 ('Varna'),
 ('Burgas');
 
-CREATE TABLE `addresses` (
-    `id` INT PRIMARY KEY AUTO_INCREMENT,
-    `address_text` VARCHAR(50) NOT NULL,
-    `town_id` INT
-);
-
-CREATE TABLE `departments` (
-    `id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(30) NOT NULL
-);
 
 INSERT INTO `departments` (`name`)
 VALUES
@@ -33,17 +14,6 @@ VALUES
 ('Software Development'),
 ('Quality Assurance');
 
-CREATE TABLE `eployees` (
-    `id` INT PRIMARY KEY AUTO_INCREMENT,
-    `first_name` VARCHAR(50),
-    `middle_name` VARCHAR(50),
-    `last_name` VARCHAR(50),
-    `job_title` VARCHAR(50),
-    `departmen_id` INT,
-    `hire_date` DATE,
-    `salary` DOUBLE,
-    `address_id` INT
-);
 
 INSERT INTO `employees` (`first_name`, `middle_name`, `last_name`, `job_title`, `department_id`, `hire_date`, `salary`)
 VALUES 
